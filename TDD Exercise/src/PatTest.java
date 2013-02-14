@@ -37,4 +37,9 @@ public class PatTest {
 	public void emptySubjectTest(){
 		assertEquals(-1, Pat.pat("", "blah"));
 	}
+	
+	@Test 
+	public void emptyPatternTest(){
+		assertEquals(-1, Pat.pat("asdf", ""));
+	}
 }
