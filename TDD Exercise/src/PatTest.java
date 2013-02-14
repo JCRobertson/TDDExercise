@@ -31,6 +31,11 @@ public class PatTest {
 		assertEquals(0, Pat.pat("test", "t"));
 	}
 	
+	@Test
+	public void matchFinalIndexTest(){
+		assertEquals(6, Pat.pat("testing", "g"));
+	}
+	
 	@Test (expected = NullPointerException.class)
 	public void nullSubjectTest(){
 		Pat.pat(null, "Test");
