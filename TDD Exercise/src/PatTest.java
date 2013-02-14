@@ -52,4 +52,9 @@ public class PatTest {
 	public void emptyPatternTest(){
 		assertEquals(-1, Pat.pat("asdf", ""));
 	}
+	
+	@Test 
+	public void emptyBothTest(){
+		assertEquals(0, Pat.pat("", ""));
+	}
 }
