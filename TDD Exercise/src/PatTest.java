@@ -21,5 +21,10 @@ public class PatTest {
 		assertEquals(-1, Pat.pat("Hello", "Test"));
 	}
 
-
+	@Test (expected = NullPointerException.class)
+	public void nullSubjectTest(){
+		Pat.pat(null, "Test");
+		fail();
+	}
+	
 }
