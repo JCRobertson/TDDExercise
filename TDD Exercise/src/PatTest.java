@@ -21,6 +21,11 @@ public class PatTest {
 		assertEquals(-1, Pat.pat("Hello", "Test"));
 	}
 
+	@Test
+	public void notFullSubstringMatchTest(){
+		assertEquals(-1, Pat.pat("test", "testing"));
+	}
+	
 	@Test (expected = NullPointerException.class)
 	public void nullSubjectTest(){
 		Pat.pat(null, "Test");
