@@ -15,5 +15,11 @@ public class PatTest {
 		assertEquals(2, Pat.pat("Hello", "llo"));
 		
 	}
+	
+	@Test
+	public void notInSubjectTest(){
+		assertEquals(-1, Pat.pat("Hello", "Test"));
+	}
+
 
 }
