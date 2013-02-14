@@ -5,7 +5,9 @@ public class Pat {
 	// Post: if pattern is not a substring of subject, return -1 
 		//	       else return (zero-based) index where the pattern (first) 
 		//	       starts in subject 
-	 return 0;
+		
+		
+		return subject.indexOf(pattern);
 	} 
 
 }

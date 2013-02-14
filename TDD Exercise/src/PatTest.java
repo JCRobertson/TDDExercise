@@ -9,5 +9,11 @@ public class PatTest {
 	public void matchTest() {
 		assertEquals(0, Pat.pat("Hello", "Hell"));
 	}
+	
+	@Test
+	public void multipleMatchTest() {
+		assertEquals(2, Pat.pat("Hello", "llo"));
+		
+	}
 
 }
