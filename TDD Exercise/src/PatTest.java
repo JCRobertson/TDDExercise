@@ -27,4 +27,10 @@ public class PatTest {
 		fail();
 	}
 	
+	@Test (expected = NullPointerException.class)
+	public void nullPatternTest(){
+		Pat.pat("Hello", null);
+		fail();
+	}
+	
 }

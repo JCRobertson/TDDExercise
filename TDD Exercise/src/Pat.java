@@ -6,7 +6,6 @@ public class Pat {
 		//	       else return (zero-based) index where the pattern (first) 
 		//	       starts in subject 
 		
-		
 		return subject.indexOf(pattern);
 	} 
 
