@@ -33,4 +33,8 @@ public class PatTest {
 		fail();
 	}
 	
+	@Test 
+	public void emptySubjectTest(){
+		assertEquals(-1, Pat.pat("", "blah"));
+	}
 }
